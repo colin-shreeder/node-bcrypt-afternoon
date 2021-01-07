@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+import axios from 'axios';
 
 export default class Header extends Component {
   constructor() {
@@ -25,10 +26,6 @@ export default class Header extends Component {
   toggleAdmin() {
     const { isAdmin } = this.state;
     this.setState({ isAdmin: !isAdmin });
-  }
-
-  login() {
-    // axios POST to /auth/login here
   }
 
   register() {
